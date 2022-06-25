@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.account.AccountFragment"
+    android:background="@color/basicBackground">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TitleTextView"
+                android:id="@+id/textView57"
+                android:text="계좌현황"/>
+
+            <TextView
+                android:id="@+id/textView58"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="추정 자산 총액과 HTS상의 추정자산 총액은 일부 오차가 있을수 있습니다."
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView59"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="15dp"
+                android:text="보유계좌(이베스트 증권)"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/spinnerAccount"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:background="@color/white"
+                android:padding="5dp" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/popupBackground"
+                android:layout_marginTop="15dp"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        style="@style/HeadTextView"
+                        android:id="@+id/textView63"
+                        android:text="회원명" />
+
+                    <TextView
+                        android:id="@+id/tv_회원명"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        style="@style/HeadTextView"
+                        android:id="@+id/textView65"
+                        android:text="추정 자산 총액"/>
+
+                    <TextView
+                        android:id="@+id/tv_추정자산총액"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        style="@style/HeadTextView"
+                        android:id="@+id/textView67"
+                        android:text="매입 금액" />
+
+                    <TextView
+                        android:id="@+id/tv매입금액"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:padding="5dp"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        style="@style/HeadTextView"
+                        android:id="@+id/textView69"
+                        android:text="평가 금액" />
+
+                    <TextView
+                        android:id="@+id/tv평가금액"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:padding="5dp"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        style="@style/HeadTextView"
+                        android:id="@+id/textView75"
+                        android:text="평가 손익" />
+
+                    <TextView
+                        android:id="@+id/tv평가손익"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:padding="5dp"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        style="@style/HeadTextView"
+                        android:id="@+id/textView76"
+                        android:text="확정 손익" />
+
+                    <TextView
+                        android:id="@+id/tv확정손익"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:padding="5dp"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </TableRow>
+            </TableLayout>
+
+            <ListView
+                android:id="@+id/itemList2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

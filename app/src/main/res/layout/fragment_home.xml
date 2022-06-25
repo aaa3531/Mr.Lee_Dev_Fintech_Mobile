@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/basicBackground"
+    tools:context=".ui.home.HomeFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:background="@color/tableBackground"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:text="연결된 전문가"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textViewExpert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:text="머니머신"
+                    android:textColor="@color/white" />
+
+                <ImageView
+                    android:id="@+id/imageViewExpert"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0"
+                    android:padding="3dp"
+                    android:src="@drawable/auto_status" />
+
+                <Button
+                    android:id="@+id/buttonControlMode"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@color/buttonColorNormalBlue"
+                    android:text="자동"
+                    android:textColor="#FFFFFF"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/gray44"
+                android:padding="5dp"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:padding="5dp"
+                        android:text="누적 추정 자산 총액"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewEstimatedAssets"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:padding="5dp"
+                        android:text="16,345,252원"
+                        android:textColor="@color/Yellow" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:padding="5dp"
+                        android:text="누적 회원수"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewMemberCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:padding="5dp"
+                        android:text="1,005명"
+                        android:textColor="@color/Yellow" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:padding="5dp"
+                        android:text="누적 수익률"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textViewAccumulatedProfit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:padding="5dp"
+                        android:text="16,345,252원"
+                        android:textColor="@color/Yellow" />
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/textView5"
+                style="@style/TitleTextView"
+                android:text="수익률 현황 Top5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@color/tableBackground"
+                android:orientation="horizontal"
+                android:stretchColumns="*">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="100"
+                    android:gravity="center_horizontal"
+                    android:paddingVertical="3dp"
+                    android:text="종목명"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="100"
+                    android:gravity="center_horizontal"
+                    android:paddingVertical="3dp"
+                    android:text="평균단가"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="100"
+                    android:gravity="center_horizontal"
+                    android:paddingVertical="3dp"
+                    android:text="평가손익"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="100"
+                    android:gravity="center_horizontal"
+                    android:paddingVertical="3dp"
+                    android:text="수익률"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/buttonColorBlue" />
+
+            <ListView
+                android:id="@+id/yieldTop5ItemList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ListView>
+
+            <TextView
+                android:id="@+id/textView10"
+                style="@style/TitleTextView"
+                android:text="전문가의 금일 추천종목 Top3" />
+
+            <ListView
+                android:id="@+id/itemList1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButtonUnSigned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="true"
+                    android:padding="5dp"
+                    android:text="미체결 내역"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <View
+                    android:id="@+id/divider11"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:background="@color/lightgray"
+                    android:padding="5dp" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonSigned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:checked="false"
+                    android:padding="5dp"
+                    android:text="체결내역"
+                    android:textAlignment="center"
+                    android:textColor="@color/lightgray"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/buttonUnSignedCancel"
+                    style="@style/BlueNormalButtonClickStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="미체결 주문 취소" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@color/tableBackground"
+                android:orientation="horizontal"
+                android:stretchColumns="*">
+
+                <TextView
+                    android:id="@+id/textView48"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="100"
+                    android:paddingVertical="3dp"
+                    android:text="종목명"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textView53"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="100"
+                    android:paddingVertical="3dp"
+                    android:text="주문구분"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textView54"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="100"
+                    android:paddingVertical="3dp"
+                    android:text="현재가"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textView55"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="100"
+                    android:paddingVertical="3dp"
+                    android:text="미체결잔량"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/buttonColorBlue" />
+
+            <ListView
+                android:id="@+id/orderItemList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/textView56"
+                style="@style/TitleTextView"
+                android:text="전문가 통신" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@color/tableBackground"
+                android:stretchColumns="*"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView68"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="100"
+                    android:paddingVertical="3dp"
+                    android:text="종목명"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textView73"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="100"
+                    android:paddingVertical="3dp"
+                    android:text="주문"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textView74"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="100"
+                    android:paddingVertical="3dp"
+                    android:text="추천가격"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textView77"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="100"
+                    android:paddingVertical="3dp"
+                    android:text="신호시간"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/buttonColorBlue" />
+
+            <ListView
+                android:id="@+id/expertItemList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

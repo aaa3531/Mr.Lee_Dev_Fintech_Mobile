@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:background="@color/basicBackground">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                style="@style/TitleTextView"
+                android:id="@+id/textView94"
+                android:text="아이디/비밀번호 입력"/>
+
+            <TextView
+                android:id="@+id/textView95"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:text="회원의 아이디와 비밀번호를 입력해주세요."
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <EditText
+                style="@style/EditTextView"
+                android:id="@+id/editTextID"
+                android:inputType="text"
+                android:hint="아이디를 입력해주세요."/>
+
+            <EditText
+                style="@style/EditTextView"
+                android:id="@+id/editTextPW"
+                android:inputType="textPassword"
+                android:hint="비밀번호를 입력해주세요."/>
+
+            <EditText
+                style="@style/EditTextView"
+                android:id="@+id/editTextPWCheck"
+                android:inputType="textPassword"
+                android:hint="비밀번호 확인"/>
+
+            <TextView
+                style="@style/TitleTextView"
+                android:id="@+id/textView96"
+                android:text="회원정보 입력"/>
+
+            <TextView
+                android:id="@+id/textView100"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:text="회원의 아이디와 비밀번호를 입력해주세요."
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <EditText
+                style="@style/EditTextView"
+                android:id="@+id/editTextName"
+                android:inputType="text"
+                android:hint="이름을 입력해주세요."/>
+
+            <EditText
+                style="@style/EditTextView"
+                android:id="@+id/editTextPhone"
+                android:inputType="phone"
+                android:hint="전화번호를 입력해주세요."/>
+
+            <EditText
+                style="@style/EditTextView"
+                android:id="@+id/editTextEmail"
+                android:inputType="textEmailAddress"
+                android:hint="이메일을 입력해주세요."/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <EditText
+                    style="@style/EditTextView"
+                    android:id="@+id/editTextAddress"
+                    android:inputType="text"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="주소를 입력해주세요."/>
+
+                <ImageButton
+                    android:id="@+id/ButtonAddressSearch"
+                    style="@style/BlueNormalButtonClickStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:layout_gravity="center"
+                    app:srcCompat="@android:drawable/ic_menu_search" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/TitleTextView"
+                android:id="@+id/textView101"
+                android:text="부본사(지점선택)"/>
+
+            <Spinner
+                android:id="@+id/spinnerSubHeadquarters"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:background="@color/white" />
+
+            <Button
+                style="@style/BlueNormalButtonClickStyle"
+                android:id="@+id/ButtonSignUpDone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="회원 가입 신청" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

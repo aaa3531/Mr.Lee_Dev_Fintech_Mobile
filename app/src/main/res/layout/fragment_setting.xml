@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.setting.SettingFragment"
+    android:background="@color/basicBackground">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tableBackground"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:padding="5dp"
+                        tools:src="@drawable/l_icon_01" />
+
+                    <TextView
+                        android:id="@+id/tvUserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="홍길동"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textView108"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="18sp"
+                        android:padding="5dp"
+                        android:text="님 반갑습니다."
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/tableBackground"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TitleTextView"
+                    android:id="@+id/textView26"
+                    android:text="계정설정"/>
+
+                <View
+                    android:id="@+id/divider7"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/buttonColorBlue" />
+
+                <Button
+                    style="@style/TransparentButtonClickStyle"
+                    android:id="@+id/ButtonStock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="증권사 연동설정"
+                    android:textAlignment="textStart"/>
+
+                <Button
+                    style="@style/TransparentButtonClickStyle"
+                    android:id="@+id/ButtonChangePW"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="비밀번호 변경하기"
+                    android:textAlignment="textStart" />
+
+                <TextView
+                    android:id="@+id/textView110"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:text="최초가입후 처음 로그인을 하신상태라면, 반드시 안전하게 비밀번호를 변경후 사용해 주시기 바랍니다." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/tableBackground"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TitleTextView"
+                    android:id="@+id/textView82"
+                    android:text="매수/매도 설정"/>
+
+                <View
+                    android:id="@+id/divider8"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/buttonColorBlue" />
+
+                <TextView
+                    android:id="@+id/textView83"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:text="매수주문 설정"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView84"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:text="금감원의 지침에 따라 수동 기능으로만 도움을 드리게 되었습니다.\n 자동 매매보다 더 큰 수익으로 보답 드리겠습니다."
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButtonManualBuy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#FFFFFF"
+                        android:checked="true"
+                        android:text="수동매수"
+                        android:textColor="@color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonAutobuy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#FFFFFF"
+                        android:checked="false"
+                        android:text="자동매수"
+                        android:textColor="@color/white"
+                        android:visibility="invisible" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView85"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:text="매도주문 설정"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView86"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:text="회원매도 시 일괄매도와 분할매도가 모두 가능하나 \n 현재는 금융법 방침에 따라 일괄매도만 진행하고 있습니다."
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroupSell"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <RadioButton
+                        android:id="@+id/radioButtonAllSell"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#FFFFFF"
+                        android:checked="true"
+                        android:text="일괄매도"
+                        android:textColor="@color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonPartSell"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#FFFFFF"
+                        android:checked="false"
+                        android:text="분할매도"
+                        android:textColor="@color/white"
+                        android:visibility="invisible" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/tableBackground"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TitleTextView"
+                    android:id="@+id/textView87"
+                    android:text="일반 설정"/>
+
+                <View
+                    android:id="@+id/divider9"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/buttonColorBlue"  />
+
+                <Button
+                    style="@style/TransparentButtonClickStyle"
+                    android:id="@+id/ButtonServiceCenter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="고객 센터"
+                    android:textAlignment="textStart" />
+
+                <Button
+                    style="@style/TransparentButtonClickStyle"
+                    android:id="@+id/ButtonKAKAO"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="카카오톡 문의하기"
+                    android:textAlignment="textStart" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/textView88"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:text="알림 설정"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:visibility="invisible" />
+
+                    <Switch
+                        android:id="@+id/switch1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:switchMinWidth="60dp"
+                        android:textSize="12sp"
+                        android:visibility="invisible"
+                        tools:ignore="UseSwitchCompatOrMaterialXml" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView90"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:layout_margin="5dp"
+                        android:text="증권사 자동 로그인"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <Switch
+                        android:id="@+id/switchStockAutoLogin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:switchMinWidth="60dp"
+                        tools:ignore="UseSwitchCompatOrMaterialXml" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView89"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:layout_margin="5dp"
+                        android:text="자동 로그인"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <Switch
+                        android:id="@+id/switchAutoLogin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:switchMinWidth="60dp"
+                        tools:ignore="UseSwitchCompatOrMaterialXml" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView92"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:layout_margin="5dp"
+                        android:text="서비스 만료일"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tvPaidDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:text="2022/10/06 12:00:00"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <Button
+                    style="@style/TransparentButtonClickStyle"
+                    android:id="@+id/ButtonLogOut"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="로그아웃"
+                    android:textAlignment="textStart" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

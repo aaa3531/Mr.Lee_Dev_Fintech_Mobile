@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">주식인다이아</string>
+    <string name="Title">주식인다이아</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">홍길동</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_메인화면">메인화면</string>
+    <string name="menu_매수매도">매수/매도 (사자/팔자)</string>
+    <string name="menu_수익률">수익률</string>
+    <string name="menu_커뮤니티">커뮤니티</string>
+    <string name="menu_설정">설정</string>
+    <string name="menu_고객센터">고객센터</string>
+    <string name="menu_카카오문의">카카오문의</string>
+    <string name="menu_로그아웃">로그아웃</string>
+
+    <string name="title_activity_login">LoginActivity</string>
+
+    <string name="prompt_id">아이디를 입력해주세요.</string>
+    <string name="prompt_password">비밀번호를 입력해주세요.</string>
+
+    <string name="action_Login">로그인</string>
+    <string name="action_SignUp">회원가입</string>
+</resources>

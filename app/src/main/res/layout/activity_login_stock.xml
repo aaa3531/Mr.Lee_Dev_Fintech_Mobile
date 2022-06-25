@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/basicBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            style="@style/TitleTextView"
+            android:id="@+id/textView39"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="증권사 정보 입력" />
+
+        <TextView
+            style="@style/ExplainTextView"
+            android:id="@+id/textView49"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="증권사 연동을 하셔야 거래를 시작하실 수 있습니다." />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/popupBackground"
+            android:padding="10dp"
+            android:layout_margin="5dp">
+
+            <TextView
+                style="@style/ExplainTextView"
+                android:id="@+id/textView64"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="증권사명" />
+
+            <TextView
+                android:id="@+id/textView66"
+                style="@style/ExplainTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="이베스트 투자증권" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <Spinner
+                android:id="@+id/SpinnerCertList"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:padding="5dp"/>
+
+            <Button
+                android:id="@+id/ButtonGetCert"
+                style="@style/BlueNormalButtonClickStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0"
+                android:text="인증서 \n가져오기"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <EditText
+            style="@style/EditTextView"
+            android:id="@+id/stockCertPW"
+            android:inputType="textPassword"
+            android:hint="공인인증서 비밀번호"/>
+
+        <EditText
+            style="@style/EditTextView"
+            android:id="@+id/accountPW"
+            android:inputType="numberPassword"
+            android:hint="계좌 비밀번호"/>
+
+        <Button
+            style="@style/BlueNormalButtonClickStyle"
+            android:id="@+id/stockButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="증권사 연동하기" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

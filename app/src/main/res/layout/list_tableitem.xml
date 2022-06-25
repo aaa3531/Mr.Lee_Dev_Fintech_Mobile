@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/tableBackground">
+
+        <TextView
+            android:id="@+id/tableItem1"
+            style="@style/TableTextView"
+            android:layout_height="wrap_content"
+            android:layout_weight="100"
+            android:gravity="center_horizontal"
+            android:text="TextView"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tableItem2"
+            style="@style/TableTextView"
+            android:layout_height="wrap_content"
+            android:layout_weight="100"
+            android:gravity="center_horizontal"
+            android:text="TextView"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tableItem3"
+            style="@style/TableTextView"
+            android:layout_height="wrap_content"
+            android:layout_weight="100"
+            android:gravity="center_horizontal"
+            android:text="TextView"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tableItem4"
+            style="@style/TableTextView"
+            android:layout_height="wrap_content"
+            android:layout_weight="100"
+            android:gravity="center_horizontal"
+            android:text="TextView"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

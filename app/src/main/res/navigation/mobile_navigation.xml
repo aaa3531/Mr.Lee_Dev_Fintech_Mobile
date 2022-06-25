@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.moneymachinemobile.ui.home.HomeFragment"
+        android:label="홈"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_계좌잔고"
+        android:name="com.example.moneymachinemobile.ui.account.AccountFragment"
+        android:label="계좌잔고"
+        tools:layout="@layout/fragment_account" />
+
+    <fragment
+        android:id="@+id/navigation_사자팔자"
+        android:name="com.example.moneymachinemobile.ui.buySell.BuySellFragment"
+        android:label="사자/팔자"
+        tools:layout="@layout/fragment_buysell" />
+
+    <fragment
+        android:id="@+id/nav_수익률"
+        android:name="com.example.moneymachinemobile.ui.yield.YieldFragment"
+        android:label="@string/menu_수익률"
+        tools:layout="@layout/fragment_yield" />
+
+    <fragment
+        android:id="@+id/nav_설정"
+        android:name="com.example.moneymachinemobile.ui.setting.SettingFragment"
+        android:label="@string/menu_설정"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/nav_머니플랜"
+        android:label="머니플랜" />
+</navigation>

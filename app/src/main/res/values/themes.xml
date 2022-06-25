@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.MoneyMachineMobile" parent="Theme.AppCompat">
+        <item name="android:statusBarColor" tools:targetApi="l">@color/basicBackground</item>
+    </style>
+
+    <style name="Theme.MoneyMachineMobile.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.MoneyMachineMobile.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/appbarColor</item>
+<!--        <item name="windowActionBar">false</item>-->
+<!--        <item name="windowNoTitle">true</item>-->
+    </style>
+</resources>

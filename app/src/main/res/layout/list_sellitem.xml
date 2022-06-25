@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    android:background="@color/popupBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <TextView
+                    style="@style/HeadTextView"
+                    android:id="@+id/label_SellName"
+                    android:text="종목명"/>
+
+                <TextView
+                    android:id="@+id/tvSell종목명"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:padding="3dp"
+                    android:text="아남전자1"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    style="@style/HeadTextView"
+                    android:id="@+id/label_잔고수량"
+                    android:text="잔고수량" />
+
+                <TextView
+                    android:id="@+id/tvSell잔고수량"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:padding="3dp"
+                    android:text="52"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <TextView
+                    style="@style/HeadTextView"
+                    android:id="@+id/label_매입금액"
+                    android:text="매입금액" />
+
+                <TextView
+                    android:id="@+id/tvSell매입금액"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:padding="3dp"
+                    android:text="12,000"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    style="@style/HeadTextView"
+                    android:id="@+id/label_평가금액"
+                    android:text="평가금액" />
+
+                <TextView
+                    android:id="@+id/tvSell평가금액"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:padding="3dp"
+                    android:text="19,000"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <TextView
+                    style="@style/HeadTextView"
+                    android:id="@+id/label_평가손익"
+                    android:text="평가손익"/>
+
+                <TextView
+                    android:id="@+id/tvSell평가손익"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:padding="3dp"
+                    android:text="7,000"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    style="@style/HeadTextView"
+                    android:id="@+id/label_수익률"
+                    android:text="수익률"/>
+
+                <TextView
+                    android:id="@+id/tvSell수익률"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:padding="3dp"
+                    android:text="+12.12"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <TextView
+                    style="@style/HeadTextView"
+                    android:id="@+id/label_SellTime"
+                    android:text="매도신호" />
+
+                <TextView
+                    android:id="@+id/tvSell신호시간"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="2020/12/12 12:12:12"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            style="@style/BlueButtonClickStyle"
+            android:layout_margin="5dp"
+            android:id="@+id/buttonSell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="매도" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
